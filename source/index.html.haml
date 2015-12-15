@@ -1,0 +1,142 @@
+-@title= 'Apisyon'
+-@page_classes= 'home'
+
+%header.header{role:'banner'}
+  .container
+    .row
+      .col-lg-12.col-xs-12.text-center.navbar
+        .pull-left.dropdown.mt-20
+          %button#dropdownMenu.btn.btn-default.btn-lg.dropdown-toggle{'aria-expanded': 'true', 'aria-haspopup': 'true', 'data-toggle': 'dropdown', type: 'button'}
+            %i.fa.fa-bars
+            Menu
+            %i.fa.fa-caret-down
+          %ul.dropdown-menu{'aria-labelledby': 'dropdownMenu'}
+            %li
+              =link_to '#' do
+                %i.fa.fa-home
+                =lorem.words 2
+            %li
+              =link_to '#' do
+                %i.fa.fa-pencil-square
+                =lorem.words 2
+            %li
+              =link_to '#' do
+                %i.fa.fa-phone-square
+                =lorem.words 2
+        .brand
+          %h1.visible-xs
+            Apsiyon
+          =image_tag ('logo.png'), class:'img-responsive hidden-xs'
+        .social-icons.pull-right.mt-20
+          %ul.list-inline
+            %li
+              =link_to '#', class:'btn btn-link' do
+                %i.fa.fa-google-plus
+            %li
+              =link_to '#', class:'btn btn-link' do
+                %i.fa.fa-twitter
+            %li
+              =link_to '#', class:'btn btn-link' do
+                %i.fa.fa-facebook
+  .bg-header-layout
+    .container
+      .row
+        .col-lg-12.col-xs-12.text-center.bg-header-content
+          .page-header.text-blue.text-uppercase
+            %h1
+              =lorem.words 5
+        .col-lg-6.col-md-6.col-sm-12.col-xs-12.pull-right.text-right.text-white.bg-header-content
+          %h3
+            =lorem.sentences 2
+          %p
+            =lorem.sentences 5
+          =link_to 'Learn More', '#', class:'btn btn-info btn-lg'
+
+%main{role:'main'}
+  .container
+    .row
+      .col-lg-12.col-xs-12.text-center
+        .page-header.text-blue.text-uppercase
+          %h1
+            =lorem.words 5
+      .col-lg-6.col-md-6.col-sm-12.col-xs-12.text-left
+        %h3
+          =lorem.sentences 5
+        %p
+          =lorem.sentences 10
+      .col-lg-6.col-md-6.col-sm-12.col-xs-12
+        .row
+          -4.times do
+            .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
+              .panel-features
+                %i.fa.fa-star.fa-3x.text-muted
+                %h3
+                  =lorem.words 2
+                %p
+                  =lorem.sentences 2
+  .container
+    .row
+      .col-lg-12.col-xs-12.text-center
+        .page-header.text-blue.text-uppercase
+          %h1
+            =lorem.words 5
+  .price-table-layout
+    .container
+      .row
+        -3.times do |i|
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.text-center
+            .panel.panel-default.panel-shadow
+              .panel-heading
+                %h3.text-muted.text-uppercase
+                  =lorem.words 2
+              .panel-body
+                %h1
+                  $
+                  #{i+20}
+                %h3.text-capitalize
+                  =lorem.words 1
+                %hr/
+                %ul.list-unstyled
+                  -5.times do
+                    %li
+                      %p
+                        =lorem.words 2
+                =link_to 'Start Your Free Trial', '#', class:'btn btn-warning btn-block mt-20'
+  .container
+    .row
+      .col-lg-12.col-xs-12.text-center
+        .page-header.text-blue.text-uppercase
+          %h1
+            =lorem.words 5
+      .col-lg-12.col-xs-12.text-center
+        %ul.list-inline
+          -6.times do
+            %li
+              =link_to '#', class:'btn' do
+                =image_tag (lorem.image('100x50')), class:'img-responsive'
+
+%footer.footer.mt-10{role:'contentinfo'}
+  .container
+    .row
+      .col-lg-12.col-xs-12
+        %hr/
+      .col-lg-12.col-xs-12.text-center
+        %ul.list-inline
+          -7.times do
+            %li
+              =link_to '#', class:'btn btn-link' do
+                =lorem.words 1
+      .col-lg-12.col-xs-12.text-center
+        %ul.list-inline
+          %li
+            =link_to '#', class:'btn btn-link' do
+              %i.fa.fa-google-plus
+          %li
+            =link_to '#', class:'btn btn-link' do
+              %i.fa.fa-twitter
+          %li
+            =link_to '#', class:'btn btn-link' do
+              %i.fa.fa-facebook
+      .col-lg-12.col-xs-12.text-center
+        %i.fa.fa-copyright
+        %small bulutfon.com
