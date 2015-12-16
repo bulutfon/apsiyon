@@ -7,21 +7,17 @@
       .col-lg-12.col-xs-12.text-center.navbar
         .pull-left.dropdown.mt-20
           %button#dropdownMenu.btn.btn-default.btn-lg.dropdown-toggle{'aria-expanded': 'true', 'aria-haspopup': 'true', 'data-toggle': 'dropdown', type: 'button'}
-            %i.fa.fa-bars
             Menu
-            %i.fa.fa-caret-down
+            %span.caret
           %ul.dropdown-menu{'aria-labelledby': 'dropdownMenu'}
             %li
               =link_to '#' do
-                %i.fa.fa-home
                 =lorem.words 2
             %li
               =link_to '#' do
-                %i.fa.fa-pencil-square
                 =lorem.words 2
             %li
               =link_to '#' do
-                %i.fa.fa-phone-square
                 =lorem.words 2
         .brand
           %h1.visible-xs
@@ -31,14 +27,15 @@
         .social-icons.pull-right.mt-20
           %ul.list-inline
             %li
-              =link_to '#', class:'btn btn-link' do
-                %i.fa.fa-google-plus
+              =link_to '#' do
+                = inline_svg('google-plus.svg' , class: 'icon-xs icon-clock')
+
             %li
-              =link_to '#', class:'btn btn-link' do
-                %i.fa.fa-twitter
+              =link_to '#' do
+                = inline_svg('facebook.svg' , class: 'icon-xs icon-clock')
             %li
-              =link_to '#', class:'btn btn-link' do
-                %i.fa.fa-facebook
+              =link_to '#' do
+                = inline_svg('twitter.svg' , class: 'icon-xs icon-clock')
   .bg-header-layout
     .container
       .row
@@ -61,7 +58,7 @@
           %h1#butun-ozellikler
             %strong
               Özellikler
-      .col-lg-6.col-md-6.col-sm-12.col-xs-12.text-left.content-features
+      .col-lg-6.col-md-6.col-sm-12.col-xs-12.text-left.content-features.mt-30
         :markdown
           Bulutfon, işletmelere bütünleşik iletişim çözümleri sunar.
 
@@ -74,7 +71,7 @@
         .row
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
             .panel-features
-              %i.fa.fa-home.fa-3x.text-muted
+              = inline_svg('building.svg' , class: 'icon icon-building')
               %h3
                 KURUMSAL IMAJ
               %p
@@ -83,7 +80,7 @@
             %hr/
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
             .panel-features
-              %i.fa.fa-clock-o.fa-3x.text-muted
+              = inline_svg('clock.svg' , class: 'icon icon-clock')
               %h3
                 RAPORLAMA
               %p
@@ -92,7 +89,7 @@
             %hr/
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
             .panel-features
-              %i.fa.fa-clock-o.fa-3x.text-muted
+              = inline_svg('fax.svg' , class: 'icon icon-fax')
               %h3
                 FAKS
               %p
@@ -101,7 +98,7 @@
             %hr/
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center
             .panel-features
-              %i.fa.fa-money.fa-3x.text-muted
+              =inline_svg('money.svg' , class: 'icon icon-money')
               %h3
                 TASARRUF
               %p
@@ -193,14 +190,15 @@
       .col-lg-12.col-xs-12.text-center
         %ul.list-inline
           %li
-            =link_to '#', class:'btn btn-link' do
-              %i.fa.fa-google-plus
+            =link_to '#' do
+              = inline_svg('google-plus.svg' , class: 'icon-xs icon-clock')
+
           %li
-            =link_to '#', class:'btn btn-link' do
-              %i.fa.fa-twitter
+            =link_to '#' do
+              = inline_svg('facebook.svg' , class: 'icon-xs icon-clock')
           %li
-            =link_to '#', class:'btn btn-link' do
-              %i.fa.fa-facebook
+            =link_to '#' do
+              = inline_svg('twitter.svg' , class: 'icon-xs icon-clock')
       .col-lg-12.col-xs-12.text-center
         %i.fa.fa-copyright
         Bu proje,
