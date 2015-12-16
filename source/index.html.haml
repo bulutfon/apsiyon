@@ -19,23 +19,11 @@
             %li
               =link_to '#' do
                 =lorem.words 2
-        .brand
+        .brand.pull-right
           %h1.visible-xs
             %strong
               Apsiyon
           =image_tag ('logo.png'), class:'img-responsive hidden-xs'
-        .social-icons.pull-right.mt-20
-          %ul.list-inline
-            %li
-              =link_to '#' do
-                = inline_svg('google-plus.svg' , class: 'icon-xs icon-clock')
-
-            %li
-              =link_to '#' do
-                = inline_svg('facebook.svg' , class: 'icon-xs icon-clock')
-            %li
-              =link_to '#' do
-                = inline_svg('twitter.svg' , class: 'icon-xs icon-clock')
   .bg-header-layout
     .container
       .row
@@ -73,7 +61,8 @@
             .panel-features
               = inline_svg('building.svg' , class: 'icon icon-building')
               %h3
-                KURUMSAL IMAJ
+                %strong
+                  KURUMSAL IMAJ
               %p
                 Sizi arayan müşterilerinize müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılar, kurumsal kimliğinizi güçlendirirsiniz.
           .col-xs-12.visible-xs
@@ -82,7 +71,8 @@
             .panel-features
               = inline_svg('clock.svg' , class: 'icon icon-clock')
               %h3
-                RAPORLAMA
+                %strong
+                  RAPORLAMA
               %p
                 Gelen giden aramları excel olarak alabilir, görüşmeleri kayıt altına alıp dinleyebilirsiniz. Böylece bütün telefon görüşmeleriniz kayıt altında olur.
           .col-xs-12.visible-xs
@@ -91,16 +81,18 @@
             .panel-features
               = inline_svg('fax.svg' , class: 'icon icon-fax')
               %h3
-                FAKS
+                %strong
+                  FAKS
               %p
-                E-Posta ile faks gödnerebilir ve alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza gerek yoktur.
+                E-Posta ile faks gönderebilir ve alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza gerek yoktur.
           .col-xs-12.visible-xs
             %hr/
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center
             .panel-features
               =inline_svg('money.svg' , class: 'icon icon-money')
               %h3
-                TASARRUF
+                %strong
+                  TASARRUF
               %p
                 Bulutfon’da kontur atış periyodu saniyeliktir. Dolasıyla 10 saniye için 60 saniye ücreti ödemezsiniz. %70’e varan telefon faturası düşüşü olur.
     .row
@@ -115,7 +107,7 @@
         .col-lg-4.col-lg-offset-2.col-md-4.col-sm-4.col-xs-12.text-center
           .panel.panel-default.panel-shadow
             .panel-heading
-              %h4.text-muted.text-uppercase
+              %h4.text-muted
                 Apsiyon Profesyonel Yönetici
             .panel-body
               %h4
@@ -140,7 +132,7 @@
         .col-lg-4.col-md-4.col-sm-4.col-xs-12.text-center
           .panel.panel-default.panel-shadow
             .panel-heading
-              %h4.text-muted.text-uppercase
+              %h4.text-muted
                 Apsiyon Site Yönetimi
             .panel-body
               %h4
@@ -181,26 +173,8 @@
     .row
       .col-lg-12.col-xs-12
         %hr/
-      .col-lg-12.col-xs-12.text-center
-        %ul.list-inline
-          -7.times do
-            %li
-              =link_to '#', class:'btn btn-link' do
-                =lorem.words 1
-      .col-lg-12.col-xs-12.text-center
-        %ul.list-inline
-          %li
-            =link_to '#' do
-              = inline_svg('google-plus.svg' , class: 'icon-xs icon-clock')
-
-          %li
-            =link_to '#' do
-              = inline_svg('facebook.svg' , class: 'icon-xs icon-clock')
-          %li
-            =link_to '#' do
-              = inline_svg('twitter.svg' , class: 'icon-xs icon-clock')
-      .col-lg-12.col-xs-12.text-center
-        %i.fa.fa-copyright
+      .col-lg-12.col-xs-12.text-center.mt-20
+        %small ©
         Bu proje,
         =link_to 'https://www.bulutfon.com', target:'_blank' do
           %mark
