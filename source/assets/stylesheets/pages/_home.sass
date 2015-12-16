@@ -34,6 +34,8 @@ a
 .bg-header-content
   position: relative
   z-index: 2
+  & > h4
+    line-height: 25px
 
 .brand
   +inline-block()
@@ -43,6 +45,10 @@ a
     content: '♦♦'
     color: $text-blue
     font-size: 30px
+
+.content-features
+  font-size: 26px
+  line-height: 43px
 
 .panel-features
   @extend %fluid

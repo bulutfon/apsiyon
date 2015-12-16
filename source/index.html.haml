@@ -25,7 +25,8 @@
                 =lorem.words 2
         .brand
           %h1.visible-xs
-            Apsiyon
+            %strong
+              Apsiyon
           =image_tag ('logo.png'), class:'img-responsive hidden-xs'
         .social-icons.pull-right.mt-20
           %ul.list-inline
@@ -44,73 +45,126 @@
         .col-lg-12.col-xs-12.text-center.bg-header-content
           .page-header.text-blue.text-uppercase
             %h1
-              =lorem.words 5
+              %strong
+                Artık Apsiyon Telefonunuzda
         .col-lg-6.col-md-6.col-sm-12.col-xs-12.pull-right.text-right.text-white.bg-header-content
-          %h3
-            =lorem.sentences 2
-          %p
-            =lorem.sentences 5
-          =link_to 'Learn More', '#', class:'btn btn-info btn-lg'
-
+          :markdown
+            # Telefonunuzdan, site sakinlerine 7/24, **borç sorgulama** , **kredi kartından tahsilatı** yapabilir.
+          :markdown
+            #### Apsiyon, Bulutfon entegrasyonu sayesinde, telefonlarınız üzerinden site sakinlerine arayan numaraya borç okuma okuyarak **telefon trafiğiniz** azalır, zaman ve iş gücü kaybını önlersiniz. Aynı şekilde telefon üzerinden kredi kartı ile tahsilatı yaparak, **tahsilatlarınızı artırırsınız**.
+          =link_to 'Bütün Özellikler', '#butun-ozellikler', class:'btn btn-info btn-lg'
 %main{role:'main'}
   .container
     .row
       .col-lg-12.col-xs-12.text-center
-        .page-header.text-blue.text-uppercase
-          %h1
-            =lorem.words 5
-      .col-lg-6.col-md-6.col-sm-12.col-xs-12.text-left
-        %h3
-          =lorem.sentences 5
-        %p
-          =lorem.sentences 10
+        .page-header.text-blue
+          %h1#butun-ozellikler
+            Özellikler
+      .col-lg-6.col-md-6.col-sm-12.col-xs-12.text-left.content-features
+        :markdown
+          Bulutfon, işletmelere bütünleşik iletişim çözümleri sunar.
+
+          Bulutfon ile **telefon santrali**, e-posta ile **faks gönderme ve alma, görüşmelerin kayıt altına alınması** gibi kurumsal bir iletişimde duyacağınız bütün özellikler vardır.
+
+          Ayrıca şimdi Apsiyon entegrasyonuyla birlikte **borç sorgulama, kredi kartından tahsilat** özellikleriyde vardır.
+
       .col-lg-6.col-md-6.col-sm-12.col-xs-12
         .row
-          -4.times do
-            .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
-              .panel-features
-                %i.fa.fa-star.fa-3x.text-muted
-                %h3
-                  =lorem.words 2
-                %p
-                  =lorem.sentences 2
-  .container
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
+            .panel-features
+              %i.fa.fa-home.fa-3x.text-muted
+              %h3
+                KURUMSAL IMAJ
+              %p
+                Sizi arayan müşterilerinize müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılar, kurumsal kimliğinizi güçlendirirsiniz.
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
+            .panel-features
+              %i.fa.fa-clock-o.fa-3x.text-muted
+              %h3
+                RAPORLAMA
+              %p
+                Gelen giden aramları excel olarak alabilir, görüşmeleri kayıt altına alıp dinleyebilirsiniz. Böylece bütün telefon görüşmeleriniz kayıt altında olur.
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
+            .panel-features
+              %i.fa.fa-clock-o.fa-3x.text-muted
+              %h3
+                FAKS
+              %p
+                E-Posta ile faks gödnerebilir ve alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza gerek yoktur.
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
+            .panel-features
+              %i.fa.fa-money.fa-3x.text-muted
+              %h3
+                TASARRUF
+              %p
+                Bulutfon’da kontur atış periyodu saniyeliktir. Dolasıyla 10 saniye için 60 saniye ücreti ödemezsiniz. %70’e varan telefon faturası düşüşü olur.
     .row
       .col-lg-12.col-xs-12.text-center
-        .page-header.text-blue.text-uppercase
+        .page-header.text-blue
           %h1
-            =lorem.words 5
+            Paketler
   .price-table-layout
     .container
       .row
-        -3.times do |i|
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.text-center
-            .panel.panel-default.panel-shadow
-              .panel-heading
-                %h3.text-muted.text-uppercase
-                  =lorem.words 2
-              .panel-body
-                %h1
-                  $
-                  #{i+20}
-                %h3.text-capitalize
-                  =lorem.words 1
-                %hr/
-                %ul.list-unstyled
-                  -5.times do
-                    %li
-                      %p
-                        =lorem.words 2
-                =link_to 'Start Your Free Trial', '#', class:'btn btn-warning btn-lg btn-block mt-20'
+        .col-lg-4.col-lg-offset-2.col-md-4.col-sm-4.col-xs-12.text-center
+          .panel.panel-default.panel-shadow
+            .panel-heading
+              %h4.text-muted.text-uppercase
+                Apsiyon Profesyonel Yönetici
+            .panel-body
+              %h4
+                Aylık 150.00 TL  + KDV
+              %h4
+                Yıllık 1500.00 TL + KDV
+              %hr/
+              %ul.list-unstyled
+                %li
+                  %p
+                    Fax var
+                %li
+                  %p
+                    Görüşme kaydı var
+                %li
+                  %p
+                    25 adet dahili
+                %li
+                  %p
+                    10 adet telefon numarası
+              =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning btn-lg btn-block mt-20'
+        .col-lg-4.col-md-4.col-sm-4.col-xs-12.text-center
+          .panel.panel-default.panel-shadow
+            .panel-heading
+              %h4.text-muted.text-uppercase
+                Apsiyon Site Yönetimi
+            .panel-body
+              %h4
+                Aylık 75.00 TL+ KDV
+              %h4
+                Yıllık 750.00 TL+ KDV
+              %hr/
+              %ul.list-unstyled
+                %li
+                  %p
+                    Fax var
+                %li
+                  %p
+                    Görüşme kaydı var
+                %li
+                  %p
+                    5 adet dahili
+                %li
+                  %p
+                    2 adet telefon numarası
+              =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning btn-lg btn-block mt-20'
   .container
     .row
       .col-lg-12.col-xs-12.text-center
-        .page-header.text-blue.text-uppercase
+        .page-header.text-blue
           %h1
-            =lorem.words 5
+            Referanslar
       .col-lg-12.col-xs-12.text-center
         %ul.list-inline
-          -6.times do
+          -3.times do
             %li
               =link_to '#', class:'btn' do
                 =image_tag (lorem.image('100x50')), class:'img-responsive'
@@ -139,4 +193,12 @@
               %i.fa.fa-facebook
       .col-lg-12.col-xs-12.text-center
         %i.fa.fa-copyright
-        %small bulutfon.com
+        Bu proje,
+        =link_to 'https://www.bulutfon.com', target:'_blank' do
+          %mark
+            Bulutfon
+        &
+        =link_to 'http://www.apsiyon.com', target:'_blank' do
+          %mark
+            Apsiyon
+        tarafından birlikte yürütülmektedir.
