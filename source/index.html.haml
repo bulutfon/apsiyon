@@ -1,4 +1,4 @@
--@title= 'Apsiyon'
+-@title= 'Apsiyon Bulutfon Entegrasyonu'
 -@page_classes= 'home'
 
 %header.header{role:'banner'}
@@ -32,7 +32,7 @@
             %h1
               %strong
                 Artık Apsiyon Telefonunuzda
-        .col-lg-6.col-md-6.col-sm-12.col-xs-12.pull-right.text-right.text-white.bg-header-content
+        .col-lg-6.col-md-6.col-sm-12.col-xs-12.pull-left.text-white.bg-header-content
           :markdown
             # Telefonunuzdan, site sakinlerine 7/24, **borç sorgulama** , **kredi kartından tahsilatı** yapabilir.
           :markdown
@@ -104,40 +104,23 @@
   .price-table-layout
     .container
       .row
+        .col-lg-12.col-xs-12.text-center.mb-40
+          .btn-group{"data-toggle":"buttons"}
+            %label.btn.btn-primary.active.js-btn-monthly
+              %input#monthly{autocomplete: "off", checked: "", name: "options", type: "radio"}
+                Aylık
+            %label.btn.btn-primary.js-btn-yearly
+              %input#yearly{autocomplete: "off", name: "options", type: "radio"}
+                Yıllık
         .col-lg-4.col-lg-offset-2.col-md-4.col-sm-4.col-xs-12.text-center
-          .panel.panel-default.panel-shadow
-            .panel-heading
-              %h4.text-muted
-                Apsiyon Profesyonel Yönetici
-            .panel-body
-              %h4
-                Aylık 150.00 TL  + KDV
-              %h4
-                Yıllık 1500.00 TL + KDV
-              %hr/
-              %ul.list-unstyled
-                %li
-                  %p
-                    Fax var
-                %li
-                  %p
-                    Görüşme kaydı var
-                %li
-                  %p
-                    25 adet dahili
-                %li
-                  %p
-                    10 adet telefon numarası
-              =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning btn-lg btn-block mt-20'
-        .col-lg-4.col-md-4.col-sm-4.col-xs-12.text-center
           .panel.panel-default.panel-shadow
             .panel-heading
               %h4.text-muted
                 Apsiyon Site Yönetimi
             .panel-body
-              %h4
+              %h4.js-monthly-layout
                 Aylık 75.00 TL+ KDV
-              %h4
+              %h4.hidden.js-yearly-layout
                 Yıllık 750.00 TL+ KDV
               %hr/
               %ul.list-unstyled
@@ -153,6 +136,31 @@
                 %li
                   %p
                     2 adet telefon numarası
+              =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning btn-lg btn-block mt-20'
+        .col-lg-4.col-md-4.col-sm-4.col-xs-12.text-center
+          .panel.panel-default.panel-shadow
+            .panel-heading
+              %h4.text-muted
+                Apsiyon Profesyonel Yönetici
+            .panel-body
+              %h4.js-monthly-layout
+                Aylık 150.00 TL  + KDV
+              %h4.hidden.js-yearly-layout
+                Yıllık 1500.00 TL + KDV
+              %hr/
+              %ul.list-unstyled
+                %li
+                  %p
+                    Fax var
+                %li
+                  %p
+                    Görüşme kaydı var
+                %li
+                  %p
+                    25 adet dahili
+                %li
+                  %p
+                    10 adet telefon numarası
               =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning btn-lg btn-block mt-20'
   .container
     .row
