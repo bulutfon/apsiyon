@@ -29,8 +29,8 @@ gem 'font-awesome-rails', '~> 4.5.0.0'
 # Susy
 #gem 'susy', '2.2.3'
 
-# Middleman Deploy
-# gem 'middleman-deploy', '~> 1.0.0'
+# Middleman Deploy (https://github.com/middleman-contrib/middleman-deploy/pull/87)
+gem 'middleman-deploy', '~>  2.0.0.pre.alpha'
 
 # Middleman Sitemap
 # gem 'middleman-sitemap', '~> 0.0.13'

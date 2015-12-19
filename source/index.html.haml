@@ -1,7 +1,7 @@
 -@title= 'Apsiyon Bulutfon Entegrasyonu'
 -@page_classes= 'home'
 
-%header.header{role:'banner'}
+%header.header
   .container
     .row
       .col-lg-12.col-xs-12.text-center.navbar
@@ -31,14 +31,14 @@
           .page-header.text-blue
             %h1
               %strong
-                Artık Apsiyon Telefonunuzda
+                Müşteri iletişiminizi otomatize edin
         .col-lg-6.col-md-6.col-sm-12.col-xs-12.pull-left.text-white.bg-header-content
+          %h3
+            Sizi arayan müşterilerinizin 7/24 borçlarını sorgulamalarını sağlayabilir ve kredi kartından tahsilat yapabilirsiniz
           :markdown
-            # Telefonunuzdan, site sakinlerine 7/24, **borç sorgulama** , **kredi kartından tahsilatı** yapabilir.
-          :markdown
-            #### Apsiyon, Bulutfon entegrasyonu sayesinde, telefonlarınız üzerinden site sakinlerine arayan numaraya borç okuma okuyarak **telefon trafiğiniz** azalır, zaman ve iş gücü kaybını önlersiniz. Aynı şekilde telefon üzerinden kredi kartı ile tahsilatı yaparak, **tahsilatlarınızı artırırsınız**.
+            #### Apsiyon & Bulutfon entegrasyonu sayesinde, site sakinlerine telefon üzerinden otomatik borç okuma hizmeti sunarak **telefon trafiğinizi azaltır** , **zaman ve iş gücü kaybını önlersiniz.** Müşterilerinize yine telefon üzerinden kredi kartı ile ödeme seçeneği sunarak tahsilat oranınızı artırırsınız.
           =link_to 'Bütün Özellikler', '#butun-ozellikler', class:'btn btn-info btn-lg'
-%main{role:'main'}
+%main
   .container
     .row
       .col-lg-12.col-xs-12.text-center
@@ -47,12 +47,10 @@
             %strong
               Özellikler
       .col-lg-6.col-md-6.col-sm-12.col-xs-12.text-left.content-features.mt-30
-        :markdown
+        %p
           Bulutfon, işletmelere bütünleşik iletişim çözümleri sunar.
-
-          Bulutfon ile **telefon santrali**, e-posta ile **faks gönderme ve alma, görüşmelerin kayıt altına alınması** gibi kurumsal bir iletişimde duyacağınız bütün özellikler vardır.
-
-          Ayrıca şimdi Apsiyon entegrasyonuyla birlikte **borç sorgulama, kredi kartından tahsilat** özellikleriyde vardır.
+        :markdown
+          Kurumsal iletişiminiz için ihtiyaç duyduğunuz; **telefon santrali** , **görüşmelerin kayıt altına alınması** , **e-posta ile faks gönderme ve alma** gibi standart çağrı merkezi özelliklerinin tümü, Bulutfon'da bulunur. Bulutfon, diğer çağrı merkezlerinden farklı olarak, **borç sorgulama** ve **kredi kartı ile tahsilat** gibi ek özellikleriyle apartman ve site yönetimlerinin tüm ihtiyaçlarına yönelik kapsamlı bir çözüm sunar.
       .col-xs-12.visible-xs
         %hr/
       .col-lg-6.col-md-6.col-sm-12.col-xs-12
@@ -64,7 +62,7 @@
                 %strong
                   KURUMSAL IMAJ
               %p
-                Sizi arayan müşterilerinize müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılar, kurumsal kimliğinizi güçlendirirsiniz.
+                Sizi arayan müşterilerinizi müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılar, kurumsal kimliğinizi güçlendirirsiniz.
           .col-xs-12.visible-xs
             %hr/
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
@@ -74,7 +72,7 @@
                 %strong
                   RAPORLAMA
               %p
-                Gelen giden aramları excel olarak alabilir, görüşmeleri kayıt altına alıp dinleyebilirsiniz. Böylece bütün telefon görüşmeleriniz kayıt altında olur.
+                Gelen-giden aramların excel olarak dökümünü alabilir, görüşmeleri kayıt altına alarak dinleyebilirsiniz.
           .col-xs-12.visible-xs
             %hr/
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
@@ -84,7 +82,7 @@
                 %strong
                   FAKS
               %p
-                E-Posta ile faks gönderebilir ve alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza gerek yoktur.
+                E-Posta ile faks gönderip alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza da gerek kalmaz.
           .col-xs-12.visible-xs
             %hr/
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center
@@ -94,7 +92,7 @@
                 %strong
                   TASARRUF
               %p
-                Bulutfon’da kontur atış periyodu saniyeliktir. Dolasıyla 10 saniye için 60 saniye ücreti ödemezsiniz. %70’e varan telefon faturası düşüşü olur.
+                Bulutfon’da kontur atış periyodu saniyeliktir. Dolasıyla, 10 saniye için 60 saniye ücreti ödemezsiniz. Telefon faturanızda %70’e varan gözle görülür bir düşüş olur.
     .row
       .col-lg-12.col-xs-12.text-center
         .page-header.text-blue
@@ -171,12 +169,11 @@
               Referanslar
       .col-lg-12.col-xs-12.text-center
         %ul.list-inline
-          -3.times do
-            %li
-              =link_to '#', class:'btn' do
-                =image_tag (lorem.image('100x50')), class:'img-responsive'
+          %li
+            =link_to '#', class:'btn' do
+              =image_tag ('simpas.png'), class:'img-responsive'
 
-%footer.footer.mt-10{role:'contentinfo'}
+%footer.footer.mt-10
   .container
     .row
       .col-lg-12.col-xs-12
