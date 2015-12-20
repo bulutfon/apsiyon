@@ -67,7 +67,7 @@ configure :build do
 
   set :relative_links, true
 
-  # Middleman Deploy 
+  # Middleman Deploy
   activate :deploy do |deploy|
     deploy.deploy_method   = :ftp
     deploy.host            = 'apsiyon.bulutfon.com'

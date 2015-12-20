@@ -4,22 +4,8 @@
 %header.header
   .container
     .row
-      .col-lg-12.col-xs-12.text-center.navbar
-        .pull-left.dropdown.mt-20
-          %button#dropdownMenu.btn.btn-default.btn-lg.dropdown-toggle{'aria-expanded': 'true', 'aria-haspopup': 'true', 'data-toggle': 'dropdown', type: 'button'}
-            Menu
-            %span.caret
-          %ul.dropdown-menu{'aria-labelledby': 'dropdownMenu'}
-            %li
-              =link_to '#' do
-                =lorem.words 2
-            %li
-              =link_to '#' do
-                =lorem.words 2
-            %li
-              =link_to '#' do
-                =lorem.words 2
-        .brand.pull-right
+      .col-lg-12.col-xs-12.navbar.text-center
+        .brand
           %h1.visible-xs
             %strong
               Apsiyon
@@ -28,7 +14,7 @@
     .container
       .row
         .col-lg-12.col-xs-12.text-center.bg-header-content
-          .page-header.text-blue
+          .page-header.text-white.text-shadow
             %h1
               %strong
                 Müşteri iletişiminizi otomatize edin
