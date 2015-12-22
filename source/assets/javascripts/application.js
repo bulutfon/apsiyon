@@ -32,7 +32,7 @@ $(window).load(function(){
         $('.js-btn-package-monthly').removeClass('hidden');
         $('.js-btn-package-yearly').addClass('hidden');
 	});
-    
+
 	$('.js-btn-yearly').on('click', function(){
         $('.js-yearly-layout').removeClass('hidden');
         $('.js-monthly-layout').addClass('hidden');
