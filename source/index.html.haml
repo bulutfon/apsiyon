@@ -5,11 +5,8 @@
   .container
     .row
       .col-lg-12.col-xs-12.navbar.text-center
-        .brand
-          %h1.visible-xs
-            %strong
-              Apsiyon
-          =image_tag ('logo.png'), class:'img-responsive hidden-xs'
+        .brand.mb-20
+          =image_tag ('logo.png'), class:'img-responsive'
   .bg-header-layout
     .container
       .row
@@ -120,7 +117,8 @@
                 %li
                   %p
                     2 adet telefon numarası
-              =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning btn-lg btn-block mt-20'
+              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=apsiyon_site', class:'btn btn-warning btn-lg btn-block js-btn-package-monthly mt-20'
+              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=yearly_apsiyon_site', class:'btn btn-warning btn-lg btn-block js-btn-package-yearly hidden mt-20'
         .col-lg-4.col-md-4.col-sm-4.col-xs-12.text-center
           .panel.panel-default.panel-shadow
             .panel-heading
@@ -145,7 +143,8 @@
                 %li
                   %p
                     10 adet telefon numarası
-              =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning btn-lg btn-block mt-20'
+              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=apsiyon_pro', class:'btn btn-warning btn-lg btn-block js-btn-package-monthly mt-20'
+              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=yearly_apsiyon_pro', class:'btn btn-warning btn-lg btn-block js-btn-package-yearly hidden mt-20'
   .container
     .row
       .col-lg-12.col-xs-12.text-center

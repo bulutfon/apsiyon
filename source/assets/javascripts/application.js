@@ -27,12 +27,16 @@ $(window).load(function(){
 	// Price Radio Buttons Event (monthly/yearly)
 	// =============================================
 	$('.js-btn-monthly').on('click', function(){
-			$('.js-yearly-layout').addClass('hidden');
-			$('.js-monthly-layout').removeClass('hidden');
-
+        $('.js-yearly-layout').addClass('hidden');
+        $('.js-monthly-layout').removeClass('hidden');
+        $('.js-btn-package-monthly').removeClass('hidden');
+        $('.js-btn-package-yearly').addClass('hidden');
 	});
+    
 	$('.js-btn-yearly').on('click', function(){
-			$('.js-yearly-layout').removeClass('hidden');
-			$('.js-monthly-layout').addClass('hidden');
+        $('.js-yearly-layout').removeClass('hidden');
+        $('.js-monthly-layout').addClass('hidden');
+        $('.js-btn-package-monthly').addClass('hidden');
+        $('.js-btn-package-yearly').removeClass('hidden');
 	});
 });
