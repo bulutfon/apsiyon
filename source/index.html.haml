@@ -35,7 +35,7 @@
         :markdown
           Kurumsal iletişiminiz için ihtiyaç duyduğunuz; **telefon santrali** , **görüşmelerin kayıt altına alınması** , **e-posta ile faks gönderme ve alma** gibi standart çağrı merkezi özelliklerinin tümü, Bulutfon'da bulunur. Bulutfon, diğer çağrı merkezlerinden farklı olarak, **borç sorgulama** ve **kredi kartı ile tahsilat** gibi ek özellikleriyle apartman ve site yönetimlerinin tüm ihtiyaçlarına yönelik kapsamlı bir çözüm sunar.
       .col-xs-12.visible-xs
-        %hr/
+        %hr
       .col-lg-6.col-md-6.col-sm-12.col-xs-12
         .row
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
@@ -47,7 +47,7 @@
               %p
                 Sizi arayan müşterilerinizi müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılar, kurumsal kimliğinizi güçlendirirsiniz.
           .col-xs-12.visible-xs
-            %hr/
+            %hr
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
             .panel-features
               = inline_svg('clock.svg' , class: 'icon icon-clock')
@@ -57,7 +57,7 @@
               %p
                 Gelen-giden aramların excel olarak dökümünü alabilir, görüşmeleri kayıt altına alarak dinleyebilirsiniz.
           .col-xs-12.visible-xs
-            %hr/
+            %hr
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
             .panel-features
               = inline_svg('fax.svg' , class: 'icon icon-fax')
@@ -67,7 +67,7 @@
               %p
                 E-Posta ile faks gönderip alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza da gerek kalmaz.
           .col-xs-12.visible-xs
-            %hr/
+            %hr
           .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center
             .panel-features
               =inline_svg('money.svg' , class: 'icon icon-money')
@@ -87,10 +87,10 @@
       .row
         .col-lg-12.col-xs-12.text-center.mb-40
           .btn-group{"data-toggle":"buttons"}
-            %label.btn.btn-primary.active.js-btn-monthly
+            %label.btn.btn-lg.btn-primary.active.js-btn-monthly
               %input#monthly{autocomplete: "off", checked: "", name: "options", type: "radio"}
                 Aylık
-            %label.btn.btn-primary.js-btn-yearly
+            %label.btn.btn-lg.btn-primary.js-btn-yearly
               %input#yearly{autocomplete: "off", name: "options", type: "radio"}
                 Yıllık
         .col-lg-4.col-lg-offset-2.col-md-4.col-sm-4.col-xs-12.text-center
@@ -103,7 +103,7 @@
                 Aylık 75.00 TL+ KDV
               %h4.hidden.js-yearly-layout
                 Yıllık 750.00 TL+ KDV
-              %hr/
+              %hr
               %ul.list-unstyled
                 %li
                   %p
@@ -129,7 +129,7 @@
                 Aylık 150.00 TL  + KDV
               %h4.hidden.js-yearly-layout
                 Yıllık 1500.00 TL + KDV
-              %hr/
+              %hr
               %ul.list-unstyled
                 %li
                   %p
@@ -162,7 +162,7 @@
   .container
     .row
       .col-lg-12.col-xs-12
-        %hr/
+        %hr
       .col-lg-12.col-xs-12.text-center.mt-20
         %small &copy;
         Bu proje,
