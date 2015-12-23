@@ -6,76 +6,92 @@
     .row
       .col-lg-12.col-xs-12.navbar.text-center
         .brand.mb-20
-          =image_tag ('logo.png'), class:'img-responsive'
+          %h1
+            %strong
+              Apsiyon
+            %i.icon.icon-heart
+            %strong
+              Bulutfon
   .bg-header-layout
     .container
       .row
-        .col-lg-12.col-xs-12.text-center.bg-header-content
+        .col-lg-12.col-xs-12.bg-header-content
           .page-header.text-white.text-shadow
             %h1
               %strong
-                Müşteri iletişiminizi otomatize edin
+                İletişiminizi otomatize edin
         .col-lg-6.col-md-6.col-sm-12.col-xs-12.pull-left.text-white.bg-header-content
           %h3
-            Sizi arayan müşterilerinizin 7/24 borçlarını sorgulamalarını sağlayabilir ve kredi kartından tahsilat yapabilirsiniz
-          :markdown
-            #### Apsiyon & Bulutfon entegrasyonu sayesinde, site sakinlerine telefon üzerinden otomatik borç okuma hizmeti sunarak **telefon trafiğinizi azaltır** , **zaman ve iş gücü kaybını önlersiniz.** Müşterilerinize yine telefon üzerinden kredi kartı ile ödeme seçeneği sunarak tahsilat oranınızı artırırsınız.
-          =link_to 'Bütün Özellikler', '#butun-ozellikler', class:'btn btn-info btn-lg'
+            Sizi arayan konut sakinlerinin borçlarını 7/24 sorgulamalarını sağlayabilir ve kredi kartından tahsilat yapabilirsiniz.
+          %h4
+            Apsiyon & Bulutfon entegrasyonu sayesinde, konut sakinlerine telefon üzerinden otomatik borç okuma hizmeti sunarak telefon
+            %strong trafiğinizi azaltır, zaman ve iş gücü kaybını önlersiniz.
+            Konut sakinlerine yine telefon üzerinden kredi kartı ile ödeme seçeneği sunarak
+            %strong tahsilat oranınızı artırırsınız.
+          =link_to 'Özellikler', '#ozellikler', class:'btn btn-info btn-lg'
 %main
   .container
     .row
       .col-lg-12.col-xs-12.text-center
         .page-header.text-blue
-          %h1#butun-ozellikler
+          %h1#ozellikler
             %strong
               Özellikler
-      .col-lg-6.col-md-6.col-sm-12.col-xs-12.text-left.content-features.mt-30
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-left.content-features.mt-10.mb-40
         %p
           Bulutfon, işletmelere bütünleşik iletişim çözümleri sunar.
-        :markdown
-          Kurumsal iletişiminiz için ihtiyaç duyduğunuz; **telefon santrali** , **görüşmelerin kayıt altına alınması** , **e-posta ile faks gönderme ve alma** gibi standart çağrı merkezi özelliklerinin tümü, Bulutfon'da bulunur. Bulutfon, diğer çağrı merkezlerinden farklı olarak, **borç sorgulama** ve **kredi kartı ile tahsilat** gibi ek özellikleriyle apartman ve site yönetimlerinin tüm ihtiyaçlarına yönelik kapsamlı bir çözüm sunar.
+          İletişiminiz için ihtiyaç duyduğunuz telefon santralini sunmakla kalmaz;
+          Görüşmeleriniz kaydeder, e-posta ile faks gönderir ve alır.
+          Diğer çağrı merkezlerinden farklı olarak,
+          %strong borç sorgulatır
+          ve
+          %strong kredi kartı ile tahsilat yapar.
+        %p
+          Bu özellikleriyle tüm ihtiyaçlarınıza yönelik kapsamlı bir çözüm sunar.
       .col-xs-12.visible-xs
         %hr
-      .col-lg-6.col-md-6.col-sm-12.col-xs-12
-        .row
-          .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
-            .panel-features
-              = inline_svg('building.svg' , class: 'icon icon-building')
-              %h3
-                %strong
-                  KURUMSAL IMAJ
-              %p
-                Sizi arayan müşterilerinizi müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılar, kurumsal kimliğinizi güçlendirirsiniz.
-          .col-xs-12.visible-xs
-            %hr
-          .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
-            .panel-features
-              = inline_svg('clock.svg' , class: 'icon icon-clock')
-              %h3
-                %strong
-                  RAPORLAMA
-              %p
-                Gelen-giden aramların excel olarak dökümünü alabilir, görüşmeleri kayıt altına alarak dinleyebilirsiniz.
-          .col-xs-12.visible-xs
-            %hr
-          .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center.mb-10
-            .panel-features
-              = inline_svg('fax.svg' , class: 'icon icon-fax')
-              %h3
-                %strong
-                  FAKS
-              %p
-                E-Posta ile faks gönderip alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza da gerek kalmaz.
-          .col-xs-12.visible-xs
-            %hr
-          .col-lg-6.col-md-6.col-sm-6.col-xs-12.text-center
-            .panel-features
-              =inline_svg('money.svg' , class: 'icon icon-money')
-              %h3
-                %strong
-                  TASARRUF
-              %p
-                Bulutfon’da kontur atış periyodu saniyeliktir. Dolasıyla, 10 saniye için 60 saniye ücreti ödemezsiniz. Telefon faturanızda %70’e varan gözle görülür bir düşüş olur.
+      .col-lg-3.col-md-6.col-sm-6.col-xs-12.text-center
+        .panel-features
+          %svg.icon-svg.icon-building
+            %use{'xlink:href':image_path('building.svg#Layer_1')}
+          %h3
+            %strong
+              KURUMSAL IMAJ
+          %p
+            Sizi arayan konut sakinlerini müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılayarak kurumsal kimliğinizi güçlendirirsiniz.
+      .col-xs-12.visible-xs
+        %hr
+      .col-lg-3.col-md-6.col-sm-6.col-xs-12.text-center
+        .panel-features
+          %svg.icon-svg.icon-clock
+            %use{'xlink:href':image_path('clock.svg#Layer_1')}
+          %h3
+            %strong
+              RAPORLAMA
+          %p
+            Gelen-giden aramların excel olarak dökümünü alabilir, görüşmeleri kayıt altına alarak dinleyebilirsiniz.
+      .col-xs-12.visible-xs
+        %hr
+      .col-lg-3.col-md-6.col-sm-6.col-xs-12.text-center
+        .panel-features
+          %svg.icon-svg.icon-fax
+            %use{'xlink:href':image_path('fax.svg#Layer_1')}
+          %h3
+            %strong
+              FAKS
+          %p
+            E-Posta ile faks gönderip alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza da gerek kalmaz.
+      .col-xs-12.visible-xs
+        %hr
+      .col-lg-3.col-md-6.col-sm-6.col-xs-12.text-center
+        .panel-features
+          %svg.icon-svg.icon-money
+            %use{'xlink:href':image_path('money.svg#Layer_1')}
+          %h3
+            %strong
+              TASARRUF
+          %p
+            Bulutfon’da kontur atış periyodu saniyeliktir. Dolasıyla, 10 saniye için 60 saniye ücreti ödemezsiniz. Telefon faturanızda %70’e varan gözle görülür bir düşüş olur.
     .row
       .col-lg-12.col-xs-12.text-center
         .page-header.text-blue
@@ -86,12 +102,12 @@
     .container
       .row
         .col-lg-12.col-xs-12.text-center.mb-40
-          .btn-group{"data-toggle":"buttons"}
+          .btn-group{'data-toggle':'buttons'}
             %label.btn.btn-lg.btn-primary.active.js-btn-monthly
-              %input#monthly{autocomplete: "off", checked: "", name: "options", type: "radio"}
+              %input#monthly{autocomplete: 'off', checked: '', name: 'options', type: 'radio'}
                 Aylık
             %label.btn.btn-lg.btn-primary.js-btn-yearly
-              %input#yearly{autocomplete: "off", name: "options", type: "radio"}
+              %input#yearly{autocomplete: 'off', name: 'options', type: 'radio'}
                 Yıllık
         .col-lg-4.col-lg-offset-2.col-md-4.col-sm-4.col-xs-12.text-center
           .panel.panel-default.panel-shadow

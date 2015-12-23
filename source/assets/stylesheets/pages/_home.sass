@@ -12,6 +12,9 @@ a
   @extend %fluid
   padding: 10px 0
 
+.brand
+  color: #00a3e3
+
 h1[id]
   padding-top: 30px
   margin-top: 0
@@ -52,7 +55,7 @@ h1[id]
 
 .panel-features
   @extend %fluid
-  min-height: 300px
+  min-height: 350px
   font-size: $font-size-h4
 
 .price-table-layout
@@ -67,17 +70,3 @@ h1[id]
   @extend %fluid
   padding: 30px 0
 
-@media (max-width: $screen-xs-max)
-  .brand
-    display: block
-    margin-top: 5px
-    color: #00a3e3
-  .social-icons
-    +inline-block()
-    width: 100%
-    text-align: center
-
-svg.icon
-  +inline-block()
-  width: auto
-  height: 100px

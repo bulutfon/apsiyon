@@ -1,0 +1,29 @@
+//------------------------------------
+    #icons
+//------------------------------------
+
+
+i.icon
+  +inline-block()
+  font-size: 5rem
+  font-style: normal
+  line-height: 1
+  &.icon-heart
+    &::before
+      content: '\2764'
+
+@media (max-width: $screen-xs-max)
+  .icon-heart
+    &.icon
+      display: block
+
+svg.icon-svg
+  +inline-block()
+
+.icon-building,
+.icon-fax,
+.icon-money,
+.icon-clock
+  width: 128px
+  height: 128px
+
