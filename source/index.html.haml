@@ -15,12 +15,12 @@
   .bg-header-layout
     .container
       .row
-        .col-lg-12.col-xs-12.bg-header-content
+        .col-lg-12.col-xs-12.bg-header-content.text-center
           .page-header.text-white.text-shadow
             %h1
               %strong
                 İletişiminizi otomatize edin
-        .col-lg-6.col-md-6.col-sm-12.col-xs-12.pull-left.text-white.bg-header-content
+        .col-lg-12.col-md-6.col-sm-12.col-xs-12.text-white.bg-header-content.text-center
           %h3
             Sizi arayan konut sakinlerinin borçlarını 7/24 sorgulamalarını sağlayabilir ve kredi kartından tahsilat yapabilirsiniz.
           %h4
@@ -50,7 +50,7 @@
           Bu özellikleriyle tüm ihtiyaçlarınıza yönelik kapsamlı bir çözüm sunar.
       .col-xs-12.visible-xs
         %hr
-      .col-lg-3.col-md-6.col-sm-6.col-xs-12.text-center
+      .col-lg-4.col-md-6.col-sm-6.col-xs-12.text-center
         .panel-features
           %svg.icon-svg.icon-building
             %use{'xlink:href':image_path('building.svg#Layer_1')}
@@ -59,9 +59,7 @@
               KURUMSAL IMAJ
           %p
             Sizi arayan konut sakinlerini müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılayarak kurumsal kimliğinizi güçlendirirsiniz.
-      .col-xs-12.visible-xs
-        %hr
-      .col-lg-3.col-md-6.col-sm-6.col-xs-12.text-center
+      .col-lg-4.col-md-6.col-sm-6.col-xs-12.text-center
         .panel-features
           %svg.icon-svg.icon-clock
             %use{'xlink:href':image_path('clock.svg#Layer_1')}
@@ -70,9 +68,7 @@
               RAPORLAMA
           %p
             Gelen-giden aramların excel olarak dökümünü alabilir, görüşmeleri kayıt altına alarak dinleyebilirsiniz.
-      .col-xs-12.visible-xs
-        %hr
-      .col-lg-3.col-md-6.col-sm-6.col-xs-12.text-center
+      .col-lg-4.col-md-6.col-sm-6.col-xs-12.text-center
         .panel-features
           %svg.icon-svg.icon-fax
             %use{'xlink:href':image_path('fax.svg#Layer_1')}
@@ -81,9 +77,7 @@
               FAKS
           %p
             E-Posta ile faks gönderip alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza da gerek kalmaz.
-      .col-xs-12.visible-xs
-        %hr
-      .col-lg-3.col-md-6.col-sm-6.col-xs-12.text-center
+      .col-lg-4.col-lg-offset-2.col-md-6.col-sm-6.col-xs-12.text-center
         .panel-features
           %svg.icon-svg.icon-money
             %use{'xlink:href':image_path('money.svg#Layer_1')}
@@ -92,6 +86,15 @@
               TASARRUF
           %p
             Bulutfon’da kontur atış periyodu saniyeliktir. Dolasıyla, 10 saniye için 60 saniye ücreti ödemezsiniz. Telefon faturanızda %70’e varan gözle görülür bir düşüş olur.
+      .col-lg-4.col-md-6.col-sm-6.col-sm-offset-3.col-xs-12.text-center
+        .panel-features
+          %svg.icon-svg.icon-record
+            %use{'xlink:href':image_path('record.svg#Layer_1')}
+          %h3
+            %strong
+              KAYIT
+          %p
+            Bütün görüşmeleri kayıt altına alabilir ve daha sonra dinleyebilirsiniz. Böylece geçmişe yönelik bütün iletişim problemlerinizi tespit ederek kalite standartlarınızı yükseltir ayrıca yasal yükümlülüklerinizi de yerine getirirsiniz.
     .row
       .col-lg-12.col-xs-12.text-center
         .page-header.text-blue
@@ -109,16 +112,16 @@
             %label.btn.btn-lg.btn-primary.js-btn-yearly
               %input#yearly{autocomplete: 'off', name: 'options', type: 'radio'}
                 Yıllık
-        .col-lg-4.col-lg-offset-2.col-md-4.col-sm-4.col-xs-12.text-center
+        .col-lg-4.col-lg-offset-2.col-md-4.col-md-offset-2.col-sm-6.col-xs-12.text-center
           .panel.panel-default.panel-shadow
             .panel-heading
               %h4.text-muted
                 Apsiyon Site Yönetimi
             .panel-body
               %h4.js-monthly-layout
-                Aylık 75.00 TL+ KDV
+                Aylık 75.00 TL + KDV
               %h4.hidden.js-yearly-layout
-                Yıllık 750.00 TL+ KDV
+                Yıllık 750.00 TL + KDV
               %hr
               %ul.list-unstyled
                 %li
@@ -135,7 +138,7 @@
                     2 adet telefon numarası
               =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=apsiyon_site', class:'btn btn-warning btn-lg btn-block js-btn-package-monthly mt-20'
               =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=yearly_apsiyon_site', class:'btn btn-warning btn-lg btn-block js-btn-package-yearly hidden mt-20'
-        .col-lg-4.col-md-4.col-sm-4.col-xs-12.text-center
+        .col-lg-4.col-md-4.col-sm-6.col-xs-12.text-center
           .panel.panel-default.panel-shadow
             .panel-heading
               %h4.text-muted
