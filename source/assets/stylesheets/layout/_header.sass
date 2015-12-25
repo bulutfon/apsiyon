@@ -1,3 +1,45 @@
 //------------------------------------
     #header
 //------------------------------------
+
+
+.header
+  @extend %fluid
+  padding: 10px 0
+
+.brand
+  color: #00a3e3
+
+h1[id]
+  padding-top: 30px
+  margin-top: 0
+
+.bg-header-layout
+  position: relative
+  display: block
+  max-width: 100%
+  height: auto
+  padding-bottom: 50px
+  background: image_url('img-header-2.jpg') no-repeat center
+  background-size: cover
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    @extend %fluid
+    height: 100%
+    background: image_url('square-pattern.png') repeat
+    z-index: 1
+
+.bg-header-content
+  position: relative
+  z-index: 2
+  & > h3
+    line-height: 30px
+  & > h4
+    line-height: 25px
+
+.brand
+  +inline-block()

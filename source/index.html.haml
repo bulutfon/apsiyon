@@ -15,22 +15,20 @@
   .bg-header-layout
     .container
       .row
-        .col-lg-12.col-xs-12.bg-header-content.text-center
-          .page-header.text-white.text-shadow
-            %h1
-              %strong
-                İletişiminizi otomatize edin
-        .col-lg-12.col-md-6.col-sm-12.col-xs-12.text-white.bg-header-content.text-center
-          %h3
+        .col-lg-12.col-xs-12.bg-header-content.text-center.mt-40.text-white
+          %h1.text-shadow
+            %strong
+              İletişiminizi otomatize edin
+          %h3.text-shadow
             Sizi arayan konut sakinlerinin borçlarını 7/24 sorgulamalarını sağlayabilir
             %br
             ve kredi kartından tahsilat yapabilirsiniz.
-          %h4
+          %h4.text-shadow
             Apsiyon & Bulutfon entegrasyonu sayesinde, konut sakinlerine telefon üzerinden otomatik borç okuma hizmeti sunarak telefon
             %strong trafiğinizi azaltır, zaman ve iş gücü kaybını önlersiniz.
             Konut sakinlerine yine telefon üzerinden kredi kartı ile ödeme seçeneği sunarak
             %strong tahsilat oranınızı artırırsınız.
-          =link_to 'Özellikler', '#ozellikler', class:'btn btn-info btn-lg'
+          =link_to 'Özellikler', '#ozellikler', class:'btn btn-info btn-lg mt-20'
 %main
   .container
     .row
@@ -39,7 +37,7 @@
           %h1#ozellikler
             %strong
               Özellikler
-      .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-left.content-features.mt-10.mb-40
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12.text-left.font-size-h2.mt-10.mb-40
         %p
           Bulutfon, işletmelere bütünleşik iletişim çözümleri sunar.
           İletişiminiz için ihtiyaç duyduğunuz telefon santralini sunmakla kalmaz;
@@ -53,50 +51,63 @@
       .col-xs-12.visible-xs
         %hr
       .col-lg-4.col-md-6.col-sm-6.col-xs-12.text-center
-        .panel-features
-          %svg.icon-svg.icon-building
-            %use{'xlink:href':image_path('building.svg#Layer_1')}
-          %h3
-            %strong
-              KURUMSAL IMAJ
-          %p
-            Sizi arayan konut sakinlerini müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılayarak kurumsal kimliğinizi güçlendirirsiniz.
+        .panel.panel-features
+          .panel-body
+            %svg.icon-svg.icon-building
+              %use{'xlink:href':image_path('building.svg#Layer_1')}
+            %h3
+              %strong
+                KURUMSAL IMAJ
+            %p
+              Sizi arayan konut sakinlerini müzik yerine, önceden belirlemiş olduğunuz bant kaydı ile karşılayarak kurumsal kimliğinizi güçlendirirsiniz.
+      .col-xs-12.visible-xs
+        %hr
       .col-lg-4.col-md-6.col-sm-6.col-xs-12.text-center
-        .panel-features
-          %svg.icon-svg.icon-clock
-            %use{'xlink:href':image_path('clock.svg#Layer_1')}
-          %h3
-            %strong
-              RAPORLAMA
-          %p
-            Gelen-giden aramların excel olarak dökümünü alabilir, görüşmeleri kayıt altına alarak dinleyebilirsiniz.
+        .panel.panel-features
+          .panel-body
+            %svg.icon-svg.icon-record
+              %use{'xlink:href':image_path('record.svg#Layer_1')}
+            %h3
+              %strong
+                KAYIT
+            %p
+              Bütün görüşmeleri kayıt altına alabilir ve daha sonra dinleyebilirsiniz. Böylece geçmişe yönelik bütün iletişim problemlerinizi tespit ederek kalite standartlarınızı yükseltir ayrıca yasal yükümlülüklerinizi de yerine getirirsiniz.
+      .col-xs-12.visible-xs
+        %hr
       .col-lg-4.col-md-6.col-sm-6.col-xs-12.text-center
-        .panel-features
-          %svg.icon-svg.icon-fax
-            %use{'xlink:href':image_path('fax.svg#Layer_1')}
-          %h3
-            %strong
-              FAKS
-          %p
-            E-Posta ile faks gönderip alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza da gerek kalmaz.
-      .col-lg-4.col-lg-offset-2.col-md-6.col-sm-6.col-xs-12.text-center
-        .panel-features
-          %svg.icon-svg.icon-money
-            %use{'xlink:href':image_path('money.svg#Layer_1')}
-          %h3
-            %strong
-              TASARRUF
-          %p
-            Bulutfon’da kontur atış periyodu saniyeliktir. Dolasıyla, 10 saniye için 60 saniye ücreti ödemezsiniz. Telefon faturanızda %70’e varan gözle görülür bir düşüş olur.
-      .col-lg-4.col-lg-offset-0.col-md-6.col-sm-6.col-sm-offset-3.col-xs-12.text-center
-        .panel-features
-          %svg.icon-svg.icon-record
-            %use{'xlink:href':image_path('record.svg#Layer_1')}
-          %h3
-            %strong
-              KAYIT
-          %p
-            Bütün görüşmeleri kayıt altına alabilir ve daha sonra dinleyebilirsiniz. Böylece geçmişe yönelik bütün iletişim problemlerinizi tespit ederek kalite standartlarınızı yükseltir ayrıca yasal yükümlülüklerinizi de yerine getirirsiniz.
+        .panel.panel-features
+          .panel-body
+            %svg.icon-svg.icon-fax
+              %use{'xlink:href':image_path('fax.svg#Layer_1')}
+            %h3
+              %strong
+                FAKS
+            %p
+              E-Posta ile faks gönderip alabilirsiniz. Faks göndermek ve almak için ofiste olmanıza da gerek kalmaz.
+      .col-xs-12.visible-xs
+        %hr
+      .col-lg-4.col-lg-offset-1.col-md-6.col-sm-6.col-xs-12.text-center
+        .panel.panel-features
+          .panel-body
+            %svg.icon-svg.icon-money
+              %use{'xlink:href':image_path('money.svg#Layer_1')}
+            %h3
+              %strong
+                TASARRUF
+            %p
+              Bulutfon’da kontur atış periyodu saniyeliktir. Dolasıyla, 10 saniye için 60 saniye ücreti ödemezsiniz. Telefon faturanızda %70’e varan gözle görülür bir düşüş olur.
+      .col-xs-12.visible-xs
+        %hr
+      .col-lg-4.col-lg-offset-2.col-md-6.col-sm-6.col-sm-offset-3.col-xs-12.text-center
+        .panel.panel-features
+          .panel-body
+            %svg.icon-svg.icon-clock
+              %use{'xlink:href':image_path('clock.svg#Layer_1')}
+            %h3
+              %strong
+                RAPORLAMA
+            %p
+              Gelen-giden aramların excel olarak dökümünü alabilir, görüşmeleri kayıt altına alarak dinleyebilirsiniz.
     .row
       .col-lg-12.col-xs-12.text-center
         .page-header.text-blue
