@@ -11,7 +11,8 @@
     =stylesheet_link_tag  'application',
                           '//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext'
 
-    %link{rel:'icon', href:'favicon.ico', type:'image/x-icon'}
+    %link{href:'/favicon.png', rel:'icon'}
+    /[if IE] <link rel="shortcut icon" href="/favicon.ico">
 
   %body{class: @page_classes}
 
