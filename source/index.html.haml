@@ -129,66 +129,78 @@
   .price-table-layout
     .container
       .row
-        .col-lg-12.col-xs-12.text-center.mb-40
-          .btn-group{'data-toggle':'buttons'}
-            %label.btn.btn-lg.btn-primary.active.js-btn-monthly
-              %input#monthly{autocomplete: 'off', checked: '', name: 'options', type: 'radio'}
-                Aylık
-            %label.btn.btn-lg.btn-primary.js-btn-yearly
-              %input#yearly{autocomplete: 'off', name: 'options', type: 'radio'}
-                Yıllık
         .col-lg-4.col-lg-offset-2.col-md-4.col-md-offset-2.col-sm-6.col-xs-12.text-center
           .panel.panel-default.panel-shadow
             .panel-heading
               %h4.text-muted
-                Apsiyon Site Yönetimi
+                Aylık Fiyat Tablosu
             .panel-body
-              %h4.js-monthly-layout
-                Aylık 75.00 TL + KDV
-              %h4.hidden.js-yearly-layout
-                Yıllık 750.00 TL + KDV
-              %hr
-              %ul.list-unstyled
-                %li
-                  %p
-                    Fax var
-                %li
-                  %p
-                    Görüşme kaydı var
-                %li
-                  %p
-                    5 adet dahili
-                %li
-                  %p
-                    2 adet telefon numarası
-              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=apsiyon_site', class:'btn btn-warning btn-lg btn-block js-btn-package-monthly mt-20'
-              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=yearly_apsiyon_site', class:'btn btn-warning btn-lg btn-block js-btn-package-yearly hidden mt-20'
+              .table-responsive
+                %table.table
+                  %thead
+                    %tr
+                      %th.text-center
+                        Daire
+                      %th.text-center
+                        Fiyat
+                  %tbody
+                    %tr
+                      %td
+                        0 - 250
+                      %td
+                        75 TL + KDV
+                    %tr
+                      %td
+                        250 - 499
+                      %td
+                        150 TL + KDV
+                    %tr
+                      %td
+                        500 - 749
+                      %td
+                        300 TL + KDV
+                    %tr
+                      %td
+                        750 - 750+
+                      %td
+                        600 TL + KDV
+              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=apsiyon_site', class:'btn btn-warning btn-lg btn-block mt-20'
         .col-lg-4.col-md-4.col-sm-6.col-xs-12.text-center
           .panel.panel-default.panel-shadow
             .panel-heading
               %h4.text-muted
-                Apsiyon Profesyonel Yönetici
+                Yıllık Fiyat Tablosu
             .panel-body
-              %h4.js-monthly-layout
-                Aylık 150.00 TL + KDV
-              %h4.hidden.js-yearly-layout
-                Yıllık 1500.00 TL + KDV
-              %hr
-              %ul.list-unstyled
-                %li
-                  %p
-                    Fax var
-                %li
-                  %p
-                    Görüşme kaydı var
-                %li
-                  %p
-                    25 adet dahili
-                %li
-                  %p
-                    10 adet telefon numarası
-              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=apsiyon_pro', class:'btn btn-warning btn-lg btn-block js-btn-package-monthly mt-20'
-              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=yearly_apsiyon_pro', class:'btn btn-warning btn-lg btn-block js-btn-package-yearly hidden mt-20'
+              .table-responsive
+                %table.table
+                  %thead
+                    %tr
+                      %th.text-center
+                        Daire
+                      %th.text-center
+                        Fiyat
+                  %tbody
+                    %tr
+                      %td
+                        0 - 250
+                      %td
+                        150 TL + KDV
+                    %tr
+                      %td
+                        250 - 499
+                      %td
+                        300 TL + KDV
+                    %tr
+                      %td
+                        500 - 749
+                      %td
+                        600 TL + KDV
+                    %tr
+                      %td
+                        750 - 750+
+                      %td
+                        1200 TL + KDV
+              =link_to 'Santralimi Oluştur', 'https://app.bulutfon.com/accounts/new?package_keys=apsiyon_pro,yearly_apsiyon_pro,apsiyon_site,yearly_apsiyon_site&package=yearly_apsiyon_pro', class:'btn btn-warning btn-lg btn-block mt-20'
   .container
     .row
       .col-lg-12.col-xs-12.text-center
