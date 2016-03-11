@@ -145,34 +145,14 @@
                         Fiyat
                       %th
                   %tbody
-                    %tr
-                      %td
-                        0 - 250
-                      %td
-                        75 TL + KDV
-                      %td
-                        =link_to 'Santralimi Oluştur', '#', class:'btn btn-info'
-                    %tr
-                      %td
-                        250 - 499
-                      %td
-                        150 TL + KDV
-                      %td
-                        =link_to 'Santralimi Oluştur', '#', class:'btn btn-info'
-                    %tr
-                      %td
-                        500 - 749
-                      %td
-                        300 TL + KDV
-                      %td
-                        =link_to 'Santralimi Oluştur', '#', class:'btn btn-info'
-                    %tr
-                      %td
-                        750 - 750+
-                      %td
-                        600 TL + KDV
-                      %td
-                        =link_to 'Santralimi Oluştur', '#', class:'btn btn-info'
+                    - data.links.mothly.each do |item|
+                      %tr
+                        %td
+                          =item.apart
+                        %td
+                          =item.price
+                        %td
+                          =link_to 'Santralimi Oluştur', (item.link), class:'btn btn-info'
         .col-lg-6.col-md-4.col-sm-6.col-xs-12.text-center
           .panel.panel-default.panel-shadow
             .panel-heading
@@ -187,36 +167,16 @@
                         Daire
                       %th.text-center
                         Fiyat
-                      %th  
+                      %th
                   %tbody
-                    %tr
-                      %td
-                        0 - 250
-                      %td
-                        750 TL + KDV
-                      %td
-                        =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning'
-                    %tr
-                      %td
-                        250 - 499
-                      %td
-                        1500 TL + KDV
-                      %td
-                        =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning'
-                    %tr
-                      %td
-                        500 - 749
-                      %td
-                        3000 TL + KDV
-                      %td
-                        =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning'
-                    %tr
-                      %td
-                        750 - 750+
-                      %td
-                        6000 TL + KDV
-                      %td
-                        =link_to 'Santralimi Oluştur', '#', class:'btn btn-warning'
+                    - data.links.yearly.each do |item|
+                      %tr
+                        %td
+                          =item.apart
+                        %td
+                          =item.price
+                        %td
+                          =link_to 'Santralimi Oluştur', (item.link), class:'btn btn-warning'
   .container
     .row
       .col-lg-12.col-xs-12.text-center
