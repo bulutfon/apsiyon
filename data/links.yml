@@ -1,0 +1,35 @@
+mothly:
+  -
+    apart: "000 - 249"
+    link: "https://app.bulutfon.com/accounts/new?package_key=yMPUgOrVuewmaHHBhSQlIw"
+    price: "75 TL + KDV"
+  -
+    apart: "250 - 499"
+    link: "https://app.bulutfon.com/accounts/new?package_key=1Jyvw_hPw-O3bcLpNT3Pzg"
+    price: "150 TL + KDV"
+  -
+    apart: "500 - 749"
+    link:  "https://app.bulutfon.com/accounts/new?package_key=rkUcvuGItjjtwbacWutpTg"
+    price: "300 TL + KDV"
+  -
+    apart: "750 - 750 ve üzeri"
+    link:  "https://app.bulutfon.com/accounts/new?package_key=Kx3-GJhicsc67ty4ncIeag"
+    price: "600 TL + KDV"
+
+yearly:
+  -
+    apart: "000 - 249"
+    link: "https://app.bulutfon.com/accounts/new?package_key=dtNfotNvr7OTmRE_bneiPA"
+    price: "750 TL + KDV"
+  -
+    apart: "250 - 499"
+    link: "https://app.bulutfon.com/accounts/new?package_key=nLMgMcQggBPq6HRcipMnYQ"
+    price: "1500 TL + KDV"
+  -
+    apart: "500 - 749"
+    link:  "https://app.bulutfon.com/accounts/new?package_key=u-nBbUxggC1iWfgcXpDQgQ"
+    price: "3000 TL + KDV"
+  -
+    apart: "750 - 750 ve üzeri"
+    link:  "https://app.bulutfon.com/accounts/new?package_key=OMRhgN1InTUUQTkzWR9rUg"
+    price: "6000 TL + KDV"
