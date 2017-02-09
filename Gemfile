@@ -26,4 +26,4 @@ gem 'middleman-sprockets', '~> 4.0'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 # Font Awesome
-# gem 'font-awesome-sass'
+# gem 'font-awesome-rails', '~> 4.5.0.0'
